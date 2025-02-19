@@ -1,4 +1,4 @@
-# FastAPI POS Service
+# FastAPI IPN Listener
 
 ## Overview
 This FastAPI service provides APIs for:
@@ -72,7 +72,7 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 
 ## Notes
 - **IPN runs in a separate thread** to ensure non-blocking execution.
-- The customer business login can be implement in 'process_ipn' function
+- We recommend to use mongoDB for transaction data persistent
 
 ## License
 This project is for public use and is a demo IPN service for ATOM's customer.
